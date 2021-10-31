@@ -10,8 +10,8 @@ spring:
   data:
     mongodb:
       authentication-database: admin
-      #      uri: mongodb://mongodb:27017/admin
-      uri: mongodb://localhost:27017/admin
+      uri: mongodb://mongodb:27017/admin
+      #uri: mongodb://localhost:27017/admin
   security:
     user:
       name: admin
