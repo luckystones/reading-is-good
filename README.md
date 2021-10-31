@@ -15,7 +15,7 @@ All app divided into 4 main endpoint;
   
 ## Customer Controller ##
 *  persist new customers
-*  query all orders of the customer ( Paging sounds really nice )
+*  query all orders of the customer
 ## Book Controller ##
 *  persist new book
 *  update book’s stock
