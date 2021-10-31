@@ -45,5 +45,5 @@ This sh file will be taking following actions.
 - Finally application will be started 
 
 # How to test application
-You can use import collection from following postman link and test the application.  
+You can import collection from following postman link and test the application.  
 **Postman Link** [Link](https://www.getpostman.com/collections/1bf5796287b471a2a30b)
