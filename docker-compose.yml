@@ -1,0 +1,42 @@
+version: "3.0"
+services:
+  mongodb:
+    container_name: mongodb
+    image: mongo:4.0.3
+    restart: always
+    hostname: mongodb
+    environment:
+      MONGODB_INITDB_ROOT_USERNAME: "root"
+      MONGODB_INITDB_PASSWORD: "root"
+    expose:
+      - 27017
+    ports:
+      - 27017:27017
+      - 9229:9229
+
+  mongo-seed:
+    build: ./mongo-seed
+    depends_on:
+      - mongodb
+  api-service:
+    build: .
+    restart: always
+    ports:
+    - 9038:9038
+    depends_on:
+      - mongodb
+    links:
+      - mongodb:mongodb
+
+  mongo-express:
+    image: mongo-express
+    restart: always
+    ports:
+      - 8111:8081
+    depends_on:
+      - mongodb
+    links:
+      - mongodb:mongodb
+    environment:
+      - ME_CONFIG_MONGODB_SERVER=mongodb
+

@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Lord of The Rings The Fellowship Of The Ring",
+    "author": "J.R.R Tolkien",
+    "totalPageNumber": 500,
+    "price": 60,
+    "publishDate": 1635535194,
+    "count": 100
+  },
+  {
+    "title": "Harry Potter The Philosopher's Stone",
+    "author": "J.K. Rowling",
+    "totalPageNumber": 234,
+    "price": 50,
+    "publishDate": 1635535194,
+    "count": 75
+  }
+]

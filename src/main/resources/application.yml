@@ -1,0 +1,23 @@
+server:
+  port: 9038
+  error:
+    include-message: ALWAYS
+    include-binding-errors: ALWAYS
+    include-stacktrace: ALWAYS
+    include-exception: false
+
+spring:
+  data:
+    mongodb:
+      authentication-database: admin
+      #      uri: mongodb://mongodb:27017/admin
+      uri: mongodb://localhost:27017/admin
+  security:
+    user:
+      name: admin
+      password: password
+#      uri: mongodb://localhost:27017/admin
+logging:
+  level:
+    org.springframework.data.mongodb.core.MongoTemplate: DEBUG
+
